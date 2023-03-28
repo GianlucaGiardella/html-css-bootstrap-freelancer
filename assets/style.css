@@ -1,0 +1,25 @@
+header {
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #2C3E50;
+}
+
+.nav_title a {
+    font-size: 1.5rem;
+}
+
+nav a {
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.jumbo {
+    background-color: var(--bs-teal);
+}
+
+h1 {
+    font-weight: 700;
+}
