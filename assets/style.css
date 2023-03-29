@@ -48,10 +48,6 @@ nav, .copyright {
     background-color: grey;
 }
 
-.line .form-control {
-    border-color: white;
-}
-
 .line input {
     flex: 0 0 85%;
 }
@@ -69,10 +65,7 @@ footer {
     background-color: #3A546D;
 }
 
-footer .links a i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer button {
     width: 2.5rem;
     aspect-ratio: 1 / 1;
 }
