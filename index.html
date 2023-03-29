@@ -15,48 +15,39 @@
 </head>
 
 <body>
-    <header class="text-white">
-        <nav>
+    <header>
+        <nav class="py-4">
             <div class="container">
-                <div class="row pt-4 pb-4">
-                    <div class="col-auto col-lg d-flex align-items-center">
-                        <div><a href="#" class="text-white fs-4 fw-bold">start bootstrap</a></div>
-                    </div>
-                    <div class="col d-flex d-lg-none justify-content-end align-items-center">
-                        <div class="bars">
-                            <a href="#" class="text-white"><i class="fa-solid fa-bars fs-1 fw-bold"></i></a>
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center">
+                            <a href="#" class="fs-4 fw-bold">start bootstrap</a>
                         </div>
                     </div>
-                    <div class="col d-none d-lg-flex justify-content-end">
-                        <div class="contents d-flex align-items-center">
-                            <a href="#" class="p-2 text-white fw-bold">portfolio</a> <a href="#"
-                                class="p-2 text-white fw-bold">about</a> <a href="#"
-                                class="p-2 text-white fw-bold">contact</a>
+                    <div class="col d-block d-lg-none">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <a href="#"><i class="fa-solid fa-bars fs-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="#" class="p-2 fw-bold">portfolio</a>
+                            <a href="#" class="p-2 fw-bold">about</a>
+                            <a href="#" class="p-2 fw-bold">contact</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="jumbo text-white">
+
+        <div class="jumbo py-4 pt-lg-5">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-6 mt-4 m-auto col-lg-4 mt-lg-5 m-auto">
-                        <div class="contents">
-                            <img src="assets/img/avatar.svg" alt="avatar">
-                        </div>
-                    </div>
-                    <div class="col-10 mt-3 m-auto col-lg-10 m-auto">
-                        <div class="contents">
+                <div class="row">
+                    <div class="col col-lg-10 m-auto">
+                        <div class="jumbo-text text-center text-white">
+                            <img class="d-block m-auto mb-2" src="assets/img/avatar.svg" alt="avatar">
                             <h1 class="fs-1 fw-bold">start bootstrap</h1>
-                        </div>
-                    </div>
-                    <div class="col-6 mt-2 m-auto col-lg-8 m-auto">
-                        <div class="contents">
-                            <div>----- ★ -----</div>
-                        </div>
-                    </div>
-                    <div class="col-auto mt-2 mb-3 m-auto">
-                        <div class="contents">
+                            <div class="star d-flex justify-content-center align-items-center fs-3 mb-2">★</div>
                             <p class="fs-6">graphic artist - web designer - illustrator</p>
                         </div>
                     </div>
@@ -66,27 +57,57 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="row col-12">
-                <div class="title"></div>
+        <div class="portfolio py-5">
+            <div class="container">
+                <div class="title text-center mb-3">
+                    <h2 class="fs-1">portfolio</h2>
+                    <div class="star d-flex justify-content-center align-items-center fs-3">★</div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="image">
+                            <img class="d-block w-100" src="assets/img/cabin.png" alt="cabin">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image">
+                            <img class="d-block w-100" src="assets/img/cake.png" alt="cake">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image">
+                            <img class="d-block w-100" src="assets/img/circus.png" alt="circus">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image">
+                            <img class="d-block w-100" src="assets/img/game.png" alt="game">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image">
+                            <img class="d-block w-100" src="assets/img/safe.png" alt="safe">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image">
+                            <img class="d-block w-100" src="assets/img/submarine.png" alt="submarine">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <div class="contents"></div>
-            </div>
-            <div class="col">
-                <div class="contents"></div>
-            </div>
-            <div class="col">
-                <div class="contents"></div>
-            </div>
-            <div class="col">
-                <div class="contents"></div>
-            </div>
-            <div class="col">
-                <div class="contents"></div>
-            </div>
-            <div class="col">
-                <div class="contents"></div>
+        </div>
+
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>about</h2>
+                        <div class="star d-flex justify-content-center align-items-center fs-3">★</div>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
             </div>
         </div>
     </main>

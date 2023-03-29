@@ -1,4 +1,4 @@
-header {
+header, main {
     text-transform: uppercase;
 }
 
@@ -6,20 +6,49 @@ nav {
     background-color: #2C3E50;
 }
 
-.nav_title a {
-    font-size: 1.5rem;
-}
-
-nav a {
+a {
     display: block;
     font-size: 1rem;
     text-decoration: none;
+    color: white;
 }
 
 .jumbo {
     background-color: var(--bs-teal);
 }
 
-h1 {
-    font-weight: 700;
+.jumbo img {
+    width: 240px;
+}
+
+.star::before {
+    content: "";
+    display: block;
+    width: var(--line-width);
+    height: 4px;
+    margin-inline-end: 0.5rem;
+    background-color: white;
+}
+
+
+.star {
+    --line-width: 15%; 
+}
+
+.star::after {
+    content: "";
+    display: block;
+    width: var(--line-width);
+    height: 4px;
+    margin-inline-start: 0.5rem;
+    background-color: white;
+}
+
+.portfolio .star::before, 
+.portfolio .star::after {
+    background-color: black;
+}
+
+.portfolio img {
+    border-radius: 0.5rem;
 }
