@@ -28,7 +28,7 @@ a {
 
 
 .star {
-    --line-width: 15%; 
+    --line-width: 15%;
 }
 
 .star::after {
@@ -40,10 +40,10 @@ a {
     background-color: white;
 }
 
-.portfolio .star::before, 
+.portfolio .star::before,
 .portfolio .star::after,
-.contact .star::before, 
-.contact .star::after  {
+.contact .star::before,
+.contact .star::after {
     background-color: black;
 }
 
@@ -56,6 +56,22 @@ a {
     background-color: grey;
 }
 
-.contact .send a {
+.contact .send a, footer .links a {
     width: max-content;
+}
+
+footer {
+    background-color: #3A546D;
+}
+
+footer .links a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    aspect-ratio: 1 / 1;
+}
+
+.copyright {
+    background-color: #2C3E50;
 }
