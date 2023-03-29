@@ -1,7 +1,3 @@
-header, main {
-    text-transform: uppercase;
-}
-
 nav {
     background-color: #2C3E50;
 }
@@ -13,7 +9,7 @@ a {
     color: white;
 }
 
-.jumbo {
+.jumbo, .about {
     background-color: var(--bs-teal);
 }
 
@@ -47,8 +43,4 @@ a {
 .portfolio .star::before, 
 .portfolio .star::after {
     background-color: black;
-}
-
-.portfolio img {
-    border-radius: 0.5rem;
 }
