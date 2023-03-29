@@ -5,37 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/style.css">
     <title>Esercizio 16</title>
 </head>
 
 <body>
     <header class="text-uppercase">
-        <nav class="py-4">
+        <!-- <nav class="py-4">
             <div class="container">
                 <div class="row">
                     <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                            <a href="#" class="fs-4 fw-bold">start bootstrap</a>
+                        <div class="h-100 d-flex align-items-center">
+                            <a href="#" class="text-decoration-none d-block text-white fs-4 fw-bold">start
+                                bootstrap</a>
                         </div>
                     </div>
                     <div class="col d-block d-lg-none">
-                        <div class="d-flex justify-content-end align-items-center">
-                            <a href="#"><i class="fa-solid fa-bars fs-1"></i></a>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="text-decoration-none d-flex align-items-center fs-3 text-white"><i
+                                    class="fa-solid fa-bars fs-1"></i></a>
                         </div>
                     </div>
                     <div class="col d-none d-lg-block">
                         <div class="d-flex align-items-center justify-content-end">
-                            <a href="#" class="p-2 fw-bold">portfolio</a>
-                            <a href="#" class="p-2 fw-bold">about</a>
-                            <a href="#" class="p-2 fw-bold">contact</a>
+                            <a href="#" class="text-decoration-none d-block fs-5 text-white p-2 fw-bold">portfolio</a>
+                            <a href="#" class="text-decoration-none d-block fs-5 text-white p-2 fw-bold">about</a>
+                            <a href="#" class="text-decoration-none d-block fs-5 text-white p-2 fw-bold">contact</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">start bootstrap</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -57,7 +83,7 @@
     </header>
 
     <main>
-        <div class="portfolio py-5 text-uppercase">
+        <div class="portfolio py-5 text-uppercase" id="portfolio">
             <div class="container">
                 <div class="text-center mb-3">
                     <h2 class="fs-1">portfolio</h2>
@@ -98,7 +124,7 @@
             </div>
         </div>
 
-        <div class="about py-4 text-white">
+        <div class="about py-4 text-white" id="about">
             <div class="container">
                 <div class="text-center mb-3">
                     <h2 class="fs-1 text-uppercase">about</h2>
@@ -113,12 +139,13 @@
                         the perfect starting point!</div>
                 </div>
                 <div class="d-flex justify-content-center mt-5">
-                    <a href="#" class="p-2 border rounded"><i class="fa-solid fa-download"></i> Download</a>
+                    <a href="#" class="text-decoration-none d-block fs-3 text-white p-2 border rounded"><i
+                            class="fa-solid fa-download"></i> Download</a>
                 </div>
             </div>
         </div>
 
-        <div class="contact py-4">
+        <div class="contact py-4" id="contact">
             <div class="container">
                 <div class="text-center mb-3">
                     <h2 class="fs-1 text-uppercase">contact me</h2>
@@ -131,7 +158,8 @@
                     <div class="col-10">Message</div>
                     <div class="col-10"><textarea rows="6" class="w-100"></textarea></div>
                     <div class="send col-10">
-                        <a href="#" class="py-2 px-3 rounded text-white">Send</a>
+                        <a href="#"
+                            class="text-decoration-none d-block text-white py-2 px-3 rounded text-white">Send</a>
                     </div>
                 </div>
             </div>
@@ -139,8 +167,8 @@
     </main>
 
     <footer class="text-center text-white">
-        <div class="container py-5">
-            <div class="row row-cols-1 row-cols-md-3 g-4 justify-space-between">
+        <div class="container pt-5 pb-4">
+            <div class="row row-cols-1 row-cols-md-3 gx-4 justify-space-between">
                 <div class="col">
                     <div class="contents">
                         <h3 class="text-uppercase fs-5 fw-normal">location</h3>
@@ -151,10 +179,14 @@
                     <div class="links">
                         <h3 class="text-uppercase fs-5 fw-normal">around the web</h3>
                         <div class="d-flex justify-content-center">
-                            <a href="#" class="border rounded-5 me-3"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="border rounded-5 me-3"><i class="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#" class="border rounded-5 me-3"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="border rounded-5"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="text-decoration-none d-block text-white border rounded-5 me-3"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="text-decoration-none d-block text-white border rounded-5 me-3"><i
+                                    class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#" class="text-decoration-none d-block text-white border rounded-5 me-3"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="text-decoration-none d-block text-white border rounded-5"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +203,6 @@
             <div class="container">Copyright Your &#169; Website 2023</div>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
