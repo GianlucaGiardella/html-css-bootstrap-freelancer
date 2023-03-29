@@ -2,7 +2,7 @@ nav, .copyright {
     background-color: #2C3E50;
 }
 
-.jumbo, .about, .contact .send a {
+.jumbo, .about, .contact button {
     background-color: var(--bs-teal);
 }
 
@@ -44,11 +44,24 @@ nav, .copyright {
     display: block;
     width: 100%;
     height: 1px;
-    margin-top: 1rem;
+    margin-top: 0.4rem;
     background-color: grey;
 }
 
-.contact .send a, footer .links a {
+.line .form-control {
+    border-color: white;
+}
+
+.line input {
+    flex: 0 0 85%;
+}
+
+form .btn:hover {
+    background-color: var(--bs-teal);
+    opacity: 0.8;
+}
+
+footer .links a {
     width: max-content;
 }
 
