@@ -16,15 +16,15 @@
 
 <body>
     <header class="text-uppercase">
-        <nav class="navbar navbar-expand-lg navbar-light" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="#">start bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                     aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">portfolio</a>
                         </li>
@@ -46,7 +46,8 @@
                         <div class="jumbo-text text-center text-white">
                             <img class="d-block m-auto mb-2" src="assets/img/avatar.svg" alt="avatar">
                             <h1 class="fs-1 fw-bold">start bootstrap</h1>
-                            <div class="star d-flex justify-content-center align-items-center fs-3 mb-2">★</div>
+                            <div class="star d-flex justify-content-center align-items-center fs-3 mb-2"><i
+                                    class="fa-solid fa-star"></i></div>
                             <p class="fs-6">graphic artist - web designer - illustrator</p>
                         </div>
                     </div>
@@ -57,51 +58,53 @@
 
     <main>
         <div class="portfolio py-5 text-uppercase" id="portfolio">
-            <div class="container">
+            <div class="container mt-3">
                 <div class="text-center mb-3">
                     <h2 class="fs-1">portfolio</h2>
-                    <div class="star d-flex justify-content-center align-items-center fs-3">★</div>
+                    <div class="star d-flex justify-content-center align-items-center fs-3"><i
+                            class="fa-solid fa-star"></i></div>
                 </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                     <div class="col">
-                        <div class="image position-relative">
-                            <img class="d-block w-100" src="assets/img/cabin.png" alt="cabin">
+                        <div class="image position-relative rounded overflow-hidden">
+                            <img class="d-block img-fluid" src="assets/img/cabin.png" alt="cabin">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="image position-relative">
-                            <img class="d-block w-100 rounded" src="assets/img/cake.png" alt="cake">
+                        <div class="image position-relative rounded overflow-hidden">
+                            <img class="d-block img-fluid" src="assets/img/cake.png" alt="cake">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="image position-relative">
-                            <img class="d-block w-100 rounded" src="assets/img/circus.png" alt="circus">
+                        <div class="image position-relative rounded overflow-hidden">
+                            <img class="d-block img-fluid" src="assets/img/circus.png" alt="circus">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="image position-relative">
-                            <img class="d-block w-100 rounded" src="assets/img/game.png" alt="game">
+                        <div class="image position-relative rounded overflow-hidden">
+                            <img class="d-block img-fluid" src="assets/img/game.png" alt="game">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="image position-relative">
-                            <img class="d-block w-100 rounded" src="assets/img/safe.png" alt="safe">
+                        <div class="image position-relative rounded overflow-hidden">
+                            <img class="d-block img-fluid" src="assets/img/safe.png" alt="safe">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="image position-relative">
-                            <img class="d-block w-100 rounded" src="assets/img/submarine.png" alt="submarine">
+                        <div class="image position-relative rounded overflow-hidden">
+                            <img class="d-block img-fluid" src="assets/img/submarine.png" alt="submarine">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="about py-4 text-white" id="about">
-            <div class="container">
+        <div class="about py-5 text-white" id="about">
+            <div class="container mt-3">
                 <div class="text-center mb-3">
                     <h2 class="fs-1 text-uppercase">about</h2>
-                    <div class="star d-flex justify-content-center align-items-center fs-3">★</div>
+                    <div class="star d-flex justify-content-center align-items-center fs-3"><i
+                            class="fa-solid fa-star"></i></div>
                 </div>
                 <div class="row row-cols-1 row-cols-2 g-4 justify-content-center">
                     <div class="col-10 col-sm-5">Freelancer is a free bootstrap theme created by Start Bootstrap. The
@@ -111,7 +114,7 @@
                         looking to attract clients, or a graphic artist looking to share your projects, this template is
                         the perfect starting point!</div>
                 </div>
-                <div class="d-flex justify-content-center mt-5">
+                <div class="text-center mt-5">
                     <button type="button" class="btn btn-outline-light">
                         <i class="fa-solid fa-download"></i>
                         Download
@@ -120,11 +123,12 @@
             </div>
         </div>
 
-        <form class="contact py-4" id="contact">
-            <div class="container">
+        <form action="" class="contact py-5" id="contact">
+            <div class="container mt-3">
                 <div class="text-center mb-3">
                     <h2 class="fs-1 text-uppercase">contact me</h2>
-                    <div class="star d-flex justify-content-center align-items-center fs-3">★</div>
+                    <div class="star d-flex justify-content-center align-items-center fs-3"><i
+                            class="fa-solid fa-star"></i></div>
                 </div>
                 <div class="row justify-content-center gy-2">
                     <div class="line col-10">
@@ -142,18 +146,18 @@
                     <div class="line col-10">
                         <div class="d-flex justify-content-between align-items-center">
                             <label for="Phone">Phone Number</label>
-                            <input type="text" class="form-control border-0" id="Phone">
+                            <input type="tel" class="form-control border-0" id="Phone">
                         </div>
                     </div>
                     <div class="col-10">
                         <div class="">
                             <label for="Message" class="mb-2">Message</label>
-                            <textarea id="Message" cols="30" rows="8"
-                                class="w-100 border-0 border-bottom border-dark"></textarea>
+                            <textarea rows="8" class="form-control w-100 border-0 border-bottom border-dark"
+                                id="Message"></textarea>
                         </div>
                     </div>
                     <div class="col-10">
-                        <button type="submit" class="btn text-white">Submit</button>
+                        <button type="submit" class="btn text-white" data-bs-theme="light">Submit</button>
                     </div>
                 </div>
             </div>
@@ -174,19 +178,19 @@
                         <h3 class="text-uppercase fs-5 fw-normal">around the web</h3>
                         <div class="d-flex justify-content-center mb-3">
                             <button type="button"
-                                class="d-flex justify-content-center align-items-center btn btn-outline-light rounded-circle me-3">
+                                class="d-flex justify-content-center align-items-center btn btn-outline-light rounded-circle m-2">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </button>
                             <button type="button"
-                                class="d-flex justify-content-center align-items-center btn btn-outline-light rounded-circle me-3">
+                                class="d-flex justify-content-center align-items-center btn btn-outline-light rounded-circle m-2">
                                 <i class="fa-brands fa-google-plus-g"></i>
                             </button>
                             <button type="button"
-                                class="d-flex justify-content-center align-items-center btn btn-outline-light rounded-circle me-3">
+                                class="d-flex justify-content-center align-items-center btn btn-outline-light rounded-circle m-2">
                                 <i class="fa-brands fa-twitter"></i>
                             </button>
                             <button type="button"
-                                class="d-flex justify-content-center align-items-center btn btn-outline-light rounded-circle">
+                                class="d-flex justify-content-center align-items-center btn btn-outline-light rounded-circle m-2">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </button>
                         </div>
