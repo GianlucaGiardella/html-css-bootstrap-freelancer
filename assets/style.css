@@ -12,17 +12,18 @@ nav, .copyright {
 
 .portfolio .image:hover::before {
     content: "";
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;
     inset: 0;
     background-color: var(--bs-teal);
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .portfolio .image:hover::after {
     content: "+";
-    font-size: 9rem;
+    font-size: 8rem;
     position: absolute;
     inset: 0;
     display: flex;
@@ -71,7 +72,7 @@ nav, .copyright {
 }
 
 .line input {
-    flex: 0 0 85%;
+    flex: 0 0 75%;
 }
 
 form .btn:hover {
